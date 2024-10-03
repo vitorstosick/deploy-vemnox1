@@ -9,7 +9,7 @@ COPY pom.xml .
 COPY src ./src
 
 # Build do Maven SEM testes unitarios
-RUN mvn clean package -DskipTest=true
+RUN mvn clean package -DskipTests
 
 #
 # Package stage
